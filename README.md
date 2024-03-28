@@ -408,19 +408,10 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![Uploading image.png…]()
-
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/2e7bb905-3b32-4195-895c-6de3345b2e66)
  
 # Shell Script
-```
-echo '#!/bin/sh' > my-script.sh
-echo 'echo Hello World‘; exit 0 >> my-script.sh
-```
-chmod 755 my-script.sh
-./my-script.sh
-## OUTPUT
 
- 
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -431,6 +422,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/7cdd1c15-fe76-4dd0-830b-1de717ac6502)
 
 
 cat < scriptest.sh 
@@ -469,26 +461,19 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/e2b0d096-6cab-471e-88ca-1d17b474d86e)
 
  
 ls file1
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/0ae3e2dd-750e-4888-aa31-97e402f51bff)
 
 echo $?
-## OUTPUT 
-./one
-bash: ./one: Permission denied
- 
-echo $?
-## OUTPUT 
- 
-abcd
- 
-echo $?
- ## OUTPUT
+## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/6d045897-c8e4-4cf6-943d-e54c198100af)
 
 
- 
+
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -517,15 +502,8 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-
-
-
-chmod 755 strcomp.sh
- 
-./strcomp.sh 
 ## OUTPUT
-
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/3b972ee0-50c1-4f57-aa3b-a0948405c34e)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -552,6 +530,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/fc86bda5-fd3e-46a2-be01-fe3fc42dc2bb)
 
 # check if with file location
 cat>ifnested.sh 
@@ -598,6 +577,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/ae5d0860-807f-4750-973f-4ebe6f2fefc3)
 
 
 
@@ -641,7 +621,9 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/46bc8857-b7f1-42ea-87b6-248083536175)
+
 
 # check if a file
 cat > ifnested.sh 
@@ -690,7 +672,8 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+<img width="269" alt="image" src="https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/4b77bebc-e7ee-4f90-82e9-dedb19711c6f">
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -719,6 +702,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/4019b719-957f-4085-acd2-c69f718a9300)
 
 
 # testing compound comparisons
@@ -734,7 +718,9 @@ fi
 ```
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
+
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/9c820ceb-0e98-4ddc-a1a5-822295fd1e28)
 
 # using the case command
 cat >casecheck.sh 
@@ -754,7 +740,10 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+ ## OUTPUT 
+ ![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/15d5403d-483b-4ed4-bc0e-b423fe9d61bf)
  
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -769,7 +758,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+ ## OUTPUT 
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/74f67a8a-f401-4b80-bfb4-20be14dc8f3f)
+
  
 cat untiltest.sh 
 ```bash
@@ -783,8 +774,6 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
- 
 cat forin1.sh 
 ```bash
 \#!/bin/bash
@@ -794,7 +783,9 @@ do
 echo The next state is $test
 done
  ```
- 
+## OUTPUT 
+ ![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/b482c1e4-66cb-42f2-b7bb-289e0b04dc43)
+
 $ chmod 755 forin1.sh
  
  
@@ -819,6 +810,9 @@ do
 echo “word:$test”
 done
 ```
+## OUTPUT 
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/2c8d821e-5cfe-4499-9b2b-a16af0ed320c)
+
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
@@ -832,6 +826,9 @@ do
 echo "word:$test"
 done
 ```
+## OUTPUT 
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/6c86dddd-38c0-490b-89ec-651cc6704777)
+
 $ ./forin3.sh 
  
 cat forin1.sh 
@@ -845,29 +842,6 @@ done
 ```
 $ chmod 755 forin1.sh
 
-## OUTPUT
-cat forinfile.sh 
-```bash
-#!/bin/bash
-# reading values from a file
-file="cities"
-for state in `cat $file`
-do
-echo "Visit beautiful $file“
-done
-```
-$ chmod 777 forinfile.sh
-$ cat cities
-Hyderabad
-Alampur
-Basara
-Warangal
-Adilabad
-Bhadrachalam
-Khammam
-
-## OUTPUT
-
 
 cat forctype.sh 
 ```bash
@@ -878,6 +852,9 @@ do
 echo "The value of i is $i"
 done
 ````
+## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/f8a9c12a-b3bf-4201-8d7d-4300454f3b64)
+
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
@@ -891,69 +868,9 @@ do
 echo "$a - $b"
 done
 ```
-$ chmod 755 forctype.sh
-$ ./forctype1.sh 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/15faa42f-7752-45b3-9311-6b4e0157ec92)
 
-cat fornested1.sh 
-```bash
-#!/bin/bash
-# nesting for loops
-for (( a = 1; a <= 3; a++ ))
-do
-echo "Starting loop $a:"
-for (( b = 1; b <= 3; b++ ))
-do
-echo " Inside loop: $b"
-done
-done
-```
-$ chmod 755 fornested1.sh
- 
-$ ./fornested1.sh 
- ## OUTPUT
-
- 
-cat forbreak.sh 
-```bash
-#!/bin/bash
-# breaking out of a for loop
-for var1 in 1 2 3 4 5
-do
-if [ $var1 -eq 3 ]
-then
-break
-fi
-echo "Iteration number: $var1"
-done
-echo "The for loop is completed“
-```
-## OUTPUT
-
-$ chmod 755 forbreak.sh
- 
-$ ./forbreak.sh 
- 
-cat forbreak.sh 
-```bash
-#!/bin/bash
-# breaking out of a for loop
-for var1 in 1 2 3 4 5
-do
-if [ $var1 -eq 3 ]
-then
-continue
-fi
-echo "Iteration number: $var1"
-done
-echo "The for loop is completed“
-```
-
- 
-$ chmod 755 forcontinue.sh
- 
-$ ./forcontinue.sh 
-## OUTPUT
  
 cat exread.sh 
 ```bash
@@ -968,20 +885,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
-
- cat exread1.sh
-```bash
-#!/bin/bash
-# testing the read command
-read -p "Enter your name: " name
-echo "Hello $name, welcome to my program. “
-``` 
-$ chmod 755 exread1.sh 
-
-## OUTPUT
-
-
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/29dfe06b-4477-4e20-bf51-7113bc5caa89)
 
 $ ./exread1.sh 
  
@@ -1001,6 +905,8 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/6f185190-338e-4f0b-a946-0c8e341ddb2a)
+
  ./funcex.sh 
 
  
@@ -1018,6 +924,8 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/843e3586-e907-4dbb-acf6-f3512ea5751c)
+
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1035,6 +943,9 @@ done
 ```
 $ chmod 777 argshift.sh
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/e1b3ae3f-8bca-43da-bf83-70266af97046)
+
+
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1048,7 +959,10 @@ done
 set +x
 ```
 ## OUTPUT
- ./argshift.sh 1 2 3
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/27e16597-3c31-4136-9db5-f454228a1fcc)
+
+
+./argshift.sh 1 2 3
  
  
 cat > nc.awk
@@ -1079,7 +993,10 @@ bcdfghj
 ubcdfghj
 ```
 awk -f nc.awk data.dat
+
 ## OUTPUT 
+![Screenshot 2024-03-28 150900](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/63b907a4-bc45-484b-9629-28a5978830ec)
+
  
 cat > palindrome.sh
 ```bash
@@ -1107,6 +1024,7 @@ else
 fi
 ```
 ## OUTPUT 
+![Screenshot 2024-03-28 151340](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/f77c58da-0943-4691-bc6f-681cb96cfe84)
 
 
 # RESULT:
