@@ -42,26 +42,31 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/a855ab8e-3d66-4dc3-b799-9a942b161261)
 
 
 
 cat < file2
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/a9546ebb-50e0-487c-9bf7-f040eba81a42)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/a1ae7427-73d8-48d2-9dc9-42db5a5c37e2)
  
 comm file1 file2
  ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/b1c83744-b0f2-4188-a21a-4e9ad4d95fd5)
 
  
 diff file1 file2
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/9cd4f477-2a63-49c3-aa2c-891fcebbc2a7)
 
 
-#Filters
+## Filters
 
 ### Create the following files file11, file22 as follows:
 
@@ -82,17 +87,20 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/78bcef79-4ce7-45ff-a430-f949e55a6d77)
 
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/bf18e9e9-5477-46ec-8263-c92a8a8be5cf)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/72b54143-2a43-4b1f-a58f-d13d98a42ab1)
 
 
 cat < newfile 
@@ -107,39 +115,38 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/a1b3fa74-2b57-467d-8e67-631505accd71)
 
 
 
 grep hello newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/40c43b51-60ad-447d-9dca-41695a2746e2)
 
 
 
 
 grep -v hello newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/2e95fad0-d77a-4113-b741-d650d2e9ec78)
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/e1f5952f-f93e-4d28-88fa-d15549d9c27e)
 
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
-
-
-
-grep -R ubuntu /etc
-## OUTPUT
-
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/541fc42b-e974-4c49-acff-f66cb80781de)
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/7d2494b9-20cc-4a2b-a878-72cb45c4d08e)
 
 
 cat < newfile 
@@ -163,59 +170,71 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/07b1ca4c-a736-4265-9c1d-58ea86f3e15b)
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/3a09f766-999a-4075-8fe9-485c0b96fcde)
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/800ff245-81fd-4271-8325-bfe9a98117c0)
 
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/df43f847-cabf-48aa-bc92-8416ce16076c)
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/c7c027c9-af38-4712-aa04-dbb9dc870c09)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/d9f68051-a4f0-4127-bb81-ddade5a000bf)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/6f04d417-b882-4a22-92df-adee2fec0489)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/099c9882-2f9c-43e6-b7d6-00044298a35c)
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/6daddf0c-bb8e-4109-8214-cdf5c6bbf4a0)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/d981cef0-472e-439e-9577-7062131609ec)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/17c6707b-b486-4304-bab8-388175ea40c3)
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/2908b09d-d86e-4cb5-b24a-a629b773d921)
 
 
 cat > file23
@@ -234,79 +253,95 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/12af3f1c-f919-4cbc-949b-c8e557ff46d4)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/d9df74bc-644d-4b1c-9a47-bcb5a0b8f330)
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/0c8b152f-48a5-464f-b9a5-179f80d59d28)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/46c70de8-7b64-4928-96f0-0b8a05324eee)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/3fb4f466-dc60-4a90-9b28-102cd8e05cf0)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/088a5c04-8f9e-4b03-bc81-89a4580dd429)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/02ba7daa-7898-4d8f-b78f-3faf2459eb1d)
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/54f4a6a8-2f7b-4f52-827b-21378895bc96)
 
 
 
 seq 10 
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/f1d773d3-5795-4f90-8d24-9c6616da8863)
 
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/059de049-0a88-40c0-b4f6-c250d22597d5)
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/61da2d56-9c95-40aa-a2bd-28c6d856c948)
 
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/d7d613d4-5096-49a7-a9f7-8b1954aff317)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/b22b55b6-fa66-46c0-ab71-4b7ce943b3d0)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/33d649a0-a989-4cec-96c6-8a33b7d4cb63)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/abdd6050-e3b8-458b-a7b0-74c3b6def6a7)
 
 
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/92b0420d-04c4-47dd-bec5-60dfd4583a16)
 
 
 #Sorting File content
@@ -320,6 +355,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/7275818e-b770-4e4c-8a11-bf0c8670af95)
 
 
 cat > file22
@@ -333,6 +369,7 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/2c01a6d6-496c-44d8-a2c8-670d8682492c)
 
 
 
@@ -340,6 +377,8 @@ uniq file22
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/ba921dc1-ed0c-423b-a448-353f450f5a78)
+
 
 cat < urllist.txt
 ```
@@ -356,37 +395,20 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/440c4eae-09ea-4b7a-a478-122a8d7b365e)
 
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![image](https://github.com/SANTHAN-2006/OS-Linux-commands-Shell-script/assets/80164014/ff4de1d2-5712-4724-842c-4dddc0735970)
 
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
-
-mkdir backupdir
- 
-mv backup.tar backupdir
- 
-tar -tvf backup.tar
-## OUTPUT
-
-
-tar -xvf backup.tar
-## OUTPUT
-
-gzip backup.tar
-
-ls .gz
-## OUTPUT
- 
-gunzip backup.tar.gz
-## OUTPUT
+![Uploading image.png…]()
 
  
 # Shell Script
